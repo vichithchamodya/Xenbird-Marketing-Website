@@ -1,3 +1,13 @@
+import Hero from "@/components/sections/Hero";
+import ValueProposition from "@/components/sections/ValueProposition";
+import HowItWorksPreview from "@/components/sections/HowItWorksPreview";
+
 export default function Home() {
-  return <h1>Welcome to Xenbird Marketing!</h1>;
+  return (
+    <>
+      <Hero />
+      <ValueProposition />
+      <HowItWorksPreview />
+    </>
+  );
 }
