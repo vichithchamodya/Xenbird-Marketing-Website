@@ -2,6 +2,8 @@ import Hero from "@/components/sections/Hero";
 import ValueProposition from "@/components/sections/ValueProposition";
 import HowItWorksPreview from "@/components/sections/HowItWorksPreview";
 import DemosTeaser from "@/components/sections/DemosTeaser";
+import TrustSection from "@/components/sections/TrustSection";
+import CTASection from "@/components/sections/CTASection";
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
       <ValueProposition />
       <HowItWorksPreview />
       <DemosTeaser />
+      <TrustSection />
+      <CTASection />
     </>
   );
 }
