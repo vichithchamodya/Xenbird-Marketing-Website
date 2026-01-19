@@ -87,7 +87,7 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* mobile navigation */}
         {isMenuOpen && (
           <ul className="md:hidden mt-4 space-y-2 pb-4">
             {navLinks.map((link) => (
