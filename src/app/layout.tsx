@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 import "@/styles/globals.css";
 
 const geistSans = Geist({
@@ -13,8 +15,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Xenbird Marketing",
-  description: "Marketing solutions for modern businesses.",
+  title: "Xenbird - Launch Your Custom eCommerce Website in Days",
+  description:
+    "Launch custom-coded eCommerce websites in days, not months. Explore 12+ industry-specific demos and get a fully customized online store tailored to your business.",
+  keywords: [
+    "eCommerce",
+    "custom website",
+    "online store",
+    "fast launch",
+    "demo-first",
+  ],
+  authors: [{ name: "Xenbird" }],
+  openGraph: {
+    title: "Xenbird - Custom eCommerce Websites in Days",
+    description:
+      "Launch your custom-coded eCommerce website in days with Xenbird's demo-first approach.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +44,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
       </body>
     </html>
   );
