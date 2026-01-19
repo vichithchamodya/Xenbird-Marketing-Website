@@ -5,19 +5,19 @@ export default function Hero() {
     <section className="bg-linear-to-b from-blue-50 to-white py-20 md:py-32">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Main Headline */}
+          {/* main headline */}
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Launch Your Custom eCommerce Website in{" "}
             <span className="text-blue-600">Days, Not Months</span>
           </h1>
 
-          {/* Subheadline */}
+          {/* subheadline */}
           <p className="text-xl md:text-2xl text-gray-600 mb-8">
             No templates. No technical complexity. Just custom-coded eCommerce
             websites built for your business.
           </p>
 
-          {/* CTA Buttons */}
+          {/* cta buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link
               href="/demos"
@@ -33,7 +33,7 @@ export default function Hero() {
             </Link>
           </div>
 
-          {/* Visual Placeholder */}
+          {/* visual placeholder */}
           <div className="bg-gray-200 rounded-lg h-64 md:h-96 flex items-center justify-center">
             <p className="text-gray-500">
               Hero Image / Demo Preview Placeholder
