@@ -1,8 +1,9 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Admin Dashboard Overview - Xenbird',
-  description: 'Manage your eCommerce store with Xenbird admin dashboard. Choose from Lite, Standard, Pro, and Enterprise tiers.',
+  title: "Admin Dashboard Overview - Xenbird",
+  description:
+    "Manage your eCommerce store with Xenbird admin dashboard. Choose from Lite, Standard, Pro, and Enterprise tiers.",
 };
 
 export default function AdminPage() {
