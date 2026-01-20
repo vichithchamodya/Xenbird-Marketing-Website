@@ -14,7 +14,7 @@ export default function ContactForm() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    >,
   ) => {
     setFormData({
       ...formData,
@@ -33,7 +33,7 @@ export default function ContactForm() {
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Name */}
+            {/* name */}
             <div>
               <label
                 htmlFor="name"
@@ -53,7 +53,7 @@ export default function ContactForm() {
               />
             </div>
 
-            {/* Email */}
+            {/* email */}
             <div>
               <label
                 htmlFor="email"
@@ -73,7 +73,7 @@ export default function ContactForm() {
               />
             </div>
 
-            {/* Business Type */}
+            {/* business type */}
             <div>
               <label
                 htmlFor="businessType"
@@ -97,7 +97,7 @@ export default function ContactForm() {
               </select>
             </div>
 
-            {/* Industry */}
+            {/* industry */}
             <div>
               <label
                 htmlFor="industry"
@@ -130,7 +130,7 @@ export default function ContactForm() {
               </select>
             </div>
 
-            {/* Message */}
+            {/* message */}
             <div>
               <label
                 htmlFor="message"
@@ -150,7 +150,7 @@ export default function ContactForm() {
               />
             </div>
 
-            {/* Submit Button */}
+            {/* submit button */}
             <button
               type="submit"
               className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors"

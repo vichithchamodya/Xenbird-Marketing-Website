@@ -2,6 +2,13 @@ import CurrentFocus from "@/components/sections/CurrentFocus";
 import Roadmap from "@/components/sections/Roadmap";
 import Mission from "@/components/sections/Mission";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Vision & Roadmap - Xenbird",
+  description:
+    "Our mission to democratize eCommerce. See what we're building next and our roadmap for the future of custom online stores.",
+};
 
 export default function VisionPage() {
   return (

@@ -1,5 +1,12 @@
 import IndustryGrid from "@/components/sections/IndustryGrid";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Explore Demos - Xenbird",
+  description:
+    "Browse 12+ industry-specific eCommerce demos. See real, working websites before making any commitment. Fashion, Tech, Beauty, and more.",
+};
 
 export default function DemosPage() {
   return (

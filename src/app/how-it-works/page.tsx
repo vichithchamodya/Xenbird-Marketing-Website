@@ -2,6 +2,13 @@ import ProcessFlow from "@/components/sections/ProcessFlow";
 import Timeline from "@/components/sections/Timeline";
 import FAQ from "@/components/sections/FAQ";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "How It Works - Xenbird",
+  description:
+    "Learn how Xenbird helps you launch custom eCommerce websites in days. Our proven 5-step process from demo selection to launch.",
+};
 
 export default function HowItWorksPage() {
   return (

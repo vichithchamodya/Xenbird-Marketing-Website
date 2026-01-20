@@ -1,6 +1,13 @@
 import AdminTiers from "@/components/sections/AdminTiers";
 import AdminFeatures from "@/components/sections/AdminFeatures";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Admin Dashboard - Xenbird",
+  description:
+    "Powerful admin dashboard for eCommerce. Manage orders, products, customers, and inventory with ease. From Lite to Enterprise tiers.",
+};
 
 export default function AdminPage() {
   return (
