@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { FAQ_ITEMS } from "@/lib/constants";
 import Link from "next/link";
 
 export default function FAQ() {
@@ -61,7 +62,7 @@ export default function FAQ() {
         </div>
 
         <div className="max-w-3xl mx-auto space-y-4">
-          {faqs.map((faq, index) => (
+          {FAQ_ITEMS.map((faq, index) => (
             <div
               key={index}
               className="border border-gray-200 rounded-lg overflow-hidden"

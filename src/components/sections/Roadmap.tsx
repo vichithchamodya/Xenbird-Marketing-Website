@@ -1,3 +1,5 @@
+import { ROADMAP_PHASES } from "@/lib/constants";
+
 export default function Roadmap() {
   const phases = [
     {
@@ -49,7 +51,7 @@ export default function Roadmap() {
 
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {phases.map((phase, index) => (
+            {ROADMAP_PHASES.map((phase, index) => (
               <div
                 key={index}
                 className={`bg-white p-8 rounded-lg border-2 ${

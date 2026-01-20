@@ -1,3 +1,5 @@
+import { CURRENT_FOCUS } from "@/lib/constants";
+
 export default function CurrentFocus() {
   const focuses = [
     {
@@ -39,7 +41,7 @@ export default function CurrentFocus() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {focuses.map((focus, index) => (
+          {CURRENT_FOCUS.map((focus, index) => (
             <div
               key={index}
               className="bg-blue-50 p-8 rounded-lg border border-blue-100"

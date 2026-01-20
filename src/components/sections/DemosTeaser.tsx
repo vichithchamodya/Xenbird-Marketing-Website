@@ -1,21 +1,7 @@
 import Link from "next/link";
+import { INDUSTRIES } from "@/lib/constants";
 
 export default function DemosTeaser() {
-  const industries = [
-    { name: "Fashion", icon: "👗", slug: "fashion" },
-    { name: "Technology", icon: "💻", slug: "technology" },
-    { name: "Beauty", icon: "💄", slug: "beauty" },
-    { name: "Wellness", icon: "🧘", slug: "wellness" },
-    { name: "Sports", icon: "⚽", slug: "sports" },
-    { name: "Jewellery", icon: "💎", slug: "jewellery" },
-    { name: "Appliances", icon: "🏠", slug: "appliances" },
-    { name: "Construction", icon: "🏗️", slug: "construction" },
-    { name: "Horology", icon: "⌚", slug: "horology" },
-    { name: "Food", icon: "🍕", slug: "food" },
-    { name: "Realty", icon: "🏡", slug: "realty" },
-    { name: "Automotive", icon: "🚗", slug: "automotive" },
-  ];
-
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -30,7 +16,7 @@ export default function DemosTeaser() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
-          {industries.map((industry) => (
+          {INDUSTRIES.map((industry) => (
             <Link
               key={industry.slug}
               href={`/demos/${industry.slug}`}

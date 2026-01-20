@@ -1,5 +1,6 @@
 import DemoCard from "@/components/ui/DemoCard";
 import Link from "next/link";
+import { VALID_CATEGORIES } from "@/lib/constants";
 
 export default async function DemoCategoryPage({
   params,
@@ -8,24 +9,8 @@ export default async function DemoCategoryPage({
 }) {
   const { category } = await params;
 
-  // valid categories
-  const validCategories = [
-    "fashion",
-    "technology",
-    "beauty",
-    "wellness",
-    "sports",
-    "jewellery",
-    "appliances",
-    "construction",
-    "horology",
-    "food",
-    "realty",
-    "automotive",
-  ];
-
   // check if category is valid
-  if (!validCategories.includes(category)) {
+  if (!VALID_CATEGORIES.includes(category)) {
     return (
       <div className="container mx-auto px-4 py-16 text-center">
         <h1 className="text-4xl font-bold mb-4">Category Not Found</h1>

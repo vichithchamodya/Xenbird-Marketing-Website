@@ -4,19 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { NAV_LINKS } from "@/lib/constants";
 
 export default function Header() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/how-it-works", label: "How It Works" },
-    { href: "/demos", label: "Demos" },
-    { href: "/admin", label: "Admin" },
-    { href: "/vision", label: "Vision" },
-    { href: "/contact", label: "Contact" },
-  ];
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
@@ -40,7 +32,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
+            {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
@@ -87,10 +79,10 @@ export default function Header() {
           </button>
         </div>
 
-        {/* mobile navigation */}
+        {/* Mobile Navigation */}
         {isMenuOpen && (
           <ul className="md:hidden mt-4 space-y-2 pb-4">
-            {navLinks.map((link) => (
+            {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}

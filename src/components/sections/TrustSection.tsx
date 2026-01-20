@@ -1,38 +1,13 @@
-export default function TrustSection() {
-  const stats = [
-    { number: "12+", label: "Industry Demos" },
-    { number: "7", label: "Days to Launch" },
-    { number: "100%", label: "Custom Coded" },
-    { number: "0", label: "Technical Skills Required" },
-  ];
+import { TRUST_STATS, TESTIMONIALS } from "@/lib/constants";
 
-  const testimonials = [
-    {
-      quote:
-        "Xenbird helped us launch our online store in just 5 days. The demo-first approach made everything so clear.",
-      author: "Sarah Chen",
-      role: "Founder, Fashion Boutique",
-    },
-    {
-      quote:
-        "No templates, no compromises. They built exactly what we needed without the agency complexity.",
-      author: "Michael Rodriguez",
-      role: "Owner, Tech Gadgets Store",
-    },
-    {
-      quote:
-        "As a non-technical founder, I was amazed at how simple the process was. Highly recommended!",
-      author: "Priya Sharma",
-      role: "Entrepreneur, Wellness Brand",
-    },
-  ];
+export default function TrustSection() {
 
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        {/* stats */}
+        {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20 max-w-5xl mx-auto">
-          {stats.map((stat, index) => (
+          {TRUST_STATS.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
                 {stat.number}
@@ -50,7 +25,7 @@ export default function TrustSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {testimonials.map((testimonial, index) => (
+          {TESTIMONIALS.map((testimonial, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-md">
               <p className="text-gray-700 mb-4 italic">"{testimonial.quote}"</p>
               <div className="border-t border-gray-200 pt-4">

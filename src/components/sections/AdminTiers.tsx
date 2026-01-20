@@ -1,61 +1,6 @@
+import { ADMIN_TIERS } from "@/lib/constants";
+
 export default function AdminTiers() {
-  const tiers = [
-    {
-      name: "Lite",
-      price: "Starter",
-      description: "Perfect for new businesses and small stores",
-      features: [
-        "Basic order management",
-        "Product catalog (up to 100 products)",
-        "Customer management",
-        "Basic analytics",
-        "Email notifications",
-      ],
-      highlight: false,
-    },
-    {
-      name: "Standard",
-      price: "Growing",
-      description: "Ideal for growing businesses",
-      features: [
-        "Everything in Lite",
-        "Unlimited products",
-        "Advanced analytics",
-        "Inventory management",
-        "Bulk operations",
-        "Export data",
-      ],
-      highlight: false,
-    },
-    {
-      name: "Pro",
-      price: "Popular",
-      description: "For established businesses",
-      features: [
-        "Everything in Standard",
-        "Multi-user access",
-        "Advanced reporting",
-        "API access",
-        "Custom integrations",
-        "Priority support",
-      ],
-      highlight: true,
-    },
-    {
-      name: "Enterprise",
-      price: "Custom",
-      description: "For large-scale operations",
-      features: [
-        "Everything in Pro",
-        "Dedicated account manager",
-        "Custom features",
-        "White-label options",
-        "Advanced security",
-        "SLA guarantee",
-      ],
-      highlight: false,
-    },
-  ];
 
   return (
     <section className="py-20 bg-white">
@@ -71,7 +16,7 @@ export default function AdminTiers() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          {tiers.map((tier) => (
+          {ADMIN_TIERS.map((tier) => (
             <div
               key={tier.name}
               className={`border rounded-lg p-6 ${

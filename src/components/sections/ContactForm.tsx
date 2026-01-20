@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { BUSINESS_TYPES, INDUSTRIES } from "@/lib/constants";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -90,10 +91,11 @@ export default function ContactForm() {
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
               >
                 <option value="">Select your business type</option>
-                <option value="startup">Startup</option>
-                <option value="small-business">Small Business</option>
-                <option value="medium-business">Medium Business</option>
-                <option value="enterprise">Enterprise</option>
+                {BUSINESS_TYPES.map((type) => (
+                  <option key={type.value} value={type.value}>
+                    {type.label}
+                  </option>
+                ))}
               </select>
             </div>
 
@@ -114,18 +116,11 @@ export default function ContactForm() {
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
               >
                 <option value="">Select your industry</option>
-                <option value="fashion">Fashion</option>
-                <option value="technology">Technology</option>
-                <option value="beauty">Beauty</option>
-                <option value="wellness">Wellness</option>
-                <option value="sports">Sports</option>
-                <option value="jewellery">Jewellery</option>
-                <option value="appliances">Appliances</option>
-                <option value="construction">Construction</option>
-                <option value="horology">Horology</option>
-                <option value="food">Food</option>
-                <option value="realty">Realty</option>
-                <option value="automotive">Automotive</option>
+                {INDUSTRIES.map((industry) => (
+                  <option key={industry.slug} value={industry.slug}>
+                    {industry.name}
+                  </option>
+                ))}
                 <option value="other">Other</option>
               </select>
             </div>

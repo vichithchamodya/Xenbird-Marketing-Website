@@ -1,26 +1,7 @@
 import Link from "next/link";
+import { HOW_IT_WORKS_STEPS } from "@/lib/constants";
 
 export default function HowItWorksPreview() {
-  const steps = [
-    {
-      number: "1",
-      title: "Explore Demos",
-      description:
-        "Browse our collection of industry-specific demos. See exactly what you're getting.",
-    },
-    {
-      number: "2",
-      title: "Share Requirements",
-      description:
-        "Tell us about your business and customization needs. We'll handle the rest.",
-    },
-    {
-      number: "3",
-      title: "Launch Website",
-      description:
-        "Get your fully customized eCommerce website delivered in days, not months.",
-    },
-  ];
 
   return (
     <section className="py-20 bg-gray-50">
@@ -35,7 +16,7 @@ export default function HowItWorksPreview() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
-          {steps.map((step) => (
+          {HOW_IT_WORKS_STEPS.map((step) => (
             <div key={step.number} className="text-center">
               <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 {step.number}

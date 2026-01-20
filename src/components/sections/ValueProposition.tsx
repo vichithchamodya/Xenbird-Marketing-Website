@@ -1,31 +1,6 @@
-export default function ValueProposition() {
-  const features = [
-    {
-      title: "Demo-First Approach",
-      description:
-        "Explore real, working demos across 12+ industries before making any decision. No guesswork.",
-      icon: "🎯",
-    },
-    {
-      title: "Custom-Coded, Not Templates",
-      description:
-        "Every website is custom-coded to match your exact requirements. Not a generic template.",
-      icon: "💻",
-    },
-    {
-      title: "Launch in Days",
-      description:
-        "What takes months with traditional development, we deliver in days. Fast, reliable, proven.",
-      icon: "⚡",
-    },
-    {
-      title: "Zero Technical Complexity",
-      description:
-        "No coding required. No technical knowledge needed. We handle everything for you.",
-      icon: "✨",
-    },
-  ];
+import { VALUE_PROPOSITIONS } from "@/lib/constants";
 
+export default function ValueProposition() {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -40,7 +15,7 @@ export default function ValueProposition() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {features.map((feature, index) => (
+          {VALUE_PROPOSITIONS.map((feature, index) => (
             <div
               key={index}
               className="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow"
